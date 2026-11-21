@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL RPL // SMKN 9 MEDAN — P3R Responsive System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dark-hour-ripple"></div>
+
+    <!-- P3R MOBILE DRAWER -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <span class="drawer-title">S.E.E.S. NAVIGATOR</span>
+            <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Menu">&times;</button>
+        </div>
+        <div class="drawer-section-label">// NAVIGASI PORTAL</div>
+        <nav class="drawer-nav">
+            <a href="#beranda" class="drawer-link">01. BERANDA</a>
+            <a href="#kurikulum" class="drawer-link">02. KURIKULUM RPL</a>
+            <a href="#proyek" class="drawer-link">03. KARYA SISWA</a>
+            <a href="#lsp" class="drawer-link">04. INFO LSP &amp; PKL</a>
+        </nav>
+        <div class="drawer-section-label">// MENU CEPAT LAB</div>
+        <ul class="drawer-quick-list">
+            <li><a href="#jadwal">Jadwal Praktikum Lab</a></li>
+            <li><a href="#modul">Modul Pemrograman Web</a></li>
+            <li><a href="#inventaris">Daftar Lab RPL SMKN 9</a></li>
+            <li><a href="#uji-kompetensi">Persiapan Uji Kompetensi</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN RESPONSIVE GRID WRAPPER -->
+    <div class="page-wrapper" id="beranda">
+
+        <!-- HEADER -->
+        <header class="header" id="mainHeader">
+            <div class="brand-cluster">
+                <div class="p3-emblem">XII<br>RPL</div>
+                <div class="logo-text">
+                    <span class="sub">SMK NEGERI 9 MEDAN // PORTAL WEB</span>
+                    <span class="main">RPL RELOAD SYSTEM</span>
+                </div>
+            </div>
+
+            <nav class="nav-links" aria-label="Navigasi Utama">
+                <a href="#beranda" class="active"><span>BERANDA</span></a>
+                <a href="#kurikulum"><span>KURIKULUM</span></a>
+                <a href="#proyek"><span>KARYA SISWA</span></a>
+                <a href="#kontak"><span>KONTAK</span></a>
+            </nav>
+
+            <div class="p3-hud-status" aria-hidden="true">
+                <div class="hud-date-box">
+                    <div class="date" id="hudDateText">21 / 11</div>
+                    <div class="time-slot" id="hudTimeSlot">LAB SESSION</div>
+                </div>
+                <div class="moon-orb" title="Dark Hour Phase"></div>
+            </div>
+
+            <button class="hamburger-btn" id="openDrawerBtn" aria-label="Buka Menu">&#9776;</button>
+        </header>
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="sidebar-kiri" id="kurikulum">
+            <div class="p3-tag">MENU CEPAT</div>
+            <h3>AKSES LAB RPL</h3>
+            <ul>
+                <li><a href="#jadwal"><span class="num">01</span><span>Jadwal Praktikum</span></a></li>
+                <li><a href="#modul"><span class="num">02</span><span>Modul Pemrograman Web</span></a></li>
+                <li><a href="#inventaris"><span class="num">03</span><span>Daftar Lab RPL</span></a></li>
+                <li><a href="#lsp"><span class="num">04</span><span>Info PKL &amp; LSP</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <main class="konten-utama" id="proyek">
+            <div class="section-header-p3">
+                <div>
+                    <div class="section-kicker">// REKAYASA PERANGKAT LUNAK — XII RPL</div>
+                    <h2>BERITA &amp; PROYEK TERBARU</h2>
+                </div>
+                <div class="grid-badge" id="gridColumnIndicator">2 KOLOM GRID</div>
+            </div>
+
+            <div class="card-grid">
+                <!-- KARTU 1 -->
+                <article class="card" data-project="0">
+                    <div class="card-thumb">
+                        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23050d21'/%3E%3Cstop offset='100%25' stop-color='%230e3a7d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g1)'/%3E%3Cpolygon points='460,0 640,0 640,360 340,360' fill='%2300d8ff' fill-opacity='0.18'/%3E%3Crect x='230' y='80' width='180' height='180' rx='12' fill='none' stroke='%2300d8ff' stroke-width='6'/%3E%3Crect x='255' y='105' width='45' height='45' fill='%2300d8ff'/%3E%3Crect x='340' y='105' width='45' height='45' fill='%23ffffff'/%3E%3Crect x='255' y='190' width='45' height='45' fill='%23ffffff'/%3E%3Crect x='320' y='170' width='65' height='65' fill='%2300d8ff'/%3E%3Ctext x='320' y='315' font-family='sans-serif' font-weight='bold' font-size='18' fill='%23ffffff' text-anchor='middle' letter-spacing='3'%3EQR LAB INVENTORY SYSTEM%3C/text%3E%3C/svg%3E" alt="Aplikasi Inventaris QR">
+                        <span class="card-arcana">01 // THE MAGICIAN</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Aplikasi Inventaris QR</h4>
+                        <p>Sistem peminjaman alat laboratorium berbasis web responsif dengan pemindai QR Code instan.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">HTML5 &bull; JS &bull; QR API</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTU 2 -->
+                <article class="card" data-project="1">
+                    <div class="card-thumb">
+                        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2307142e'/%3E%3Cstop offset='100%25' stop-color='%23164e9e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g2)'/%3E%3Ccircle cx='320' cy='165' r='90' fill='none' stroke='%2300d8ff' stroke-width='5' stroke-dasharray='18 10'/%3E%3Cpolygon points='295,125 365,165 295,205' fill='%2300d8ff'/%3E%3Ctext x='320' y='315' font-family='sans-serif' font-weight='bold' font-size='18' fill='%23ffffff' text-anchor='middle' letter-spacing='3'%3EPORTAL CBT ONLINE RPL%3C/text%3E%3C/svg%3E" alt="Portal CBT Online">
+                        <span class="card-arcana">02 // THE HIEROPHANT</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Portal CBT Online</h4>
+                        <p>Platform ujian berbasis komputer yang adaptif pada desktop laboratorium maupun layar smartphone siswa.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">CSS GRID &bull; PHP &bull; MYSQL</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTU 3 -->
+                <article class="card" data-project="2">
+                    <div class="card-thumb">
+                        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23040b1c'/%3E%3Cstop offset='100%25' stop-color='%230d9488'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g3)'/%3E%3Crect x='180' y='90' width='280' height='155' rx='10' fill='%23ffffff' fill-opacity='0.12' stroke='%2300d8ff' stroke-width='4'/%3E%3Cline x1='210' y1='135' x2='430' y2='135' stroke='%2300d8ff' stroke-width='6'/%3E%3Cline x1='210' y1='170' x2='370' y2='170' stroke='%23ffffff' stroke-width='5'/%3E%3Ctext x='320' y='315' font-family='sans-serif' font-weight='bold' font-size='18' fill='%23ffffff' text-anchor='middle' letter-spacing='3'%3EE-KATALOG PRODUK PKK%3C/text%3E%3C/svg%3E" alt="E-Katalog Produk PKK">
+                        <span class="card-arcana">03 // THE EMPRESS</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>E-Katalog Produk PKK</h4>
+                        <p>Etalase digital karya kreatif dan produk kewirausahaan siswa jurusan Rekayasa Perangkat Lunak.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">FLEXBOX &bull; UI/UX</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTU 4 -->
+                <article class="card" data-project="3">
+                    <div class="card-thumb">
+                        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23081633'/%3E%3Cstop offset='100%25' stop-color='%231d4ed8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g4)'/%3E%3Cpath d='M160 220 L250 150 L330 190 L470 105' fill='none' stroke='%2300d8ff' stroke-width='7'/%3E%3Ccircle cx='470' cy='105' r='10' fill='%23ffffff'/%3E%3Ctext x='320' y='315' font-family='sans-serif' font-weight='bold' font-size='18' fill='%23ffffff' text-anchor='middle' letter-spacing='3'%3ESISTEM MONITORING PKL%3C/text%3E%3C/svg%3E" alt="Sistem Monitoring PKL">
+                        <span class="card-arcana">04 // THE CHARIOT</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Sistem Monitoring PKL</h4>
+                        <p>Pelaporan jurnal harian dan presensi berbasis lokasi bagi siswa kelas XII yang sedang Praktik Kerja Lapangan.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">PWA &bull; GEOLOCATION</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTU 5 -->
+                <article class="card" data-project="4">
+                    <div class="card-thumb">
+                        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23050c1f'/%3E%3Cstop offset='100%25' stop-color='%230284c7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g5)'/%3E%3Cpolygon points='320,85 430,240 210,240' fill='none' stroke='%2300d8ff' stroke-width='6'/%3E%3Ccircle cx='320' cy='180' r='22' fill='%23ffffff'/%3E%3Ctext x='320' y='315' font-family='sans-serif' font-weight='bold' font-size='18' fill='%23ffffff' text-anchor='middle' letter-spacing='3'%3ESMART PRESENSI RFID%3C/text%3E%3C/svg%3E" alt="Smart Presensi RFID">
+                        <span class="card-arcana">05 // JUSTICE</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Smart Presensi Lab RFID</h4>
+                        <p>Integrasi kartu pelajar pintar dengan dashboard kehadiran real-time di laboratorium komputer SMKN 9 Medan.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">IOT &bull; REST API</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTU 6: THE HERMIT (Diperbaiki menggunakan inline SVG murni) -->
+                <article class="card" data-project="5">
+                    <div class="card-thumb">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" role="img" aria-label="Bank Modul dan Code Lab">
+                            <defs>
+                                <linearGradient id="g6" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#061229"/>
+                                    <stop offset="100%" stop-color="#0f766e"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="640" height="360" fill="url(#g6)"/>
+                            <rect x="220" y="90" width="200" height="150" rx="8" fill="none" stroke="#ffffff" stroke-width="5"/>
+                            <path d="M255 150 L285 175 L255 200 M305 200 L365 200" fill="none" stroke="#00d8ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text x="320" y="315" font-family="sans-serif" font-weight="bold" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="3">BANK MODUL &amp; CODE LAB</text>
+                        </svg>
+                        <span class="card-arcana">06 // THE HERMIT</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Bank Modul &amp; Code Lab</h4>
+                        <p>Repositori interaktif modul Kurikulum Merdeka Pemrograman Web Lanjut lengkap dengan contoh kasus responsif.</p>
+                        <div class="card-footer-meta">
+                            <span class="tech-tag">CURRICULUM &bull; GIT</span>
+                            <span class="inspect-link">INSPEKSI &rarr;</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- WIDGET PROMO KANAN -->
+        <aside class="widget-promo" id="lsp">
+            <div class="promo-badge">INFO &amp; PROMO LAB</div>
+            <h3>UJI KOMPETENSI LSP!</h3>
+            <div class="promo-box">
+                <strong>Sertifikasi Kompetensi RPL</strong>
+                <p>Persiapkan portofolio web responsif kalian sebelum jadwal asesmen dimulai.</p>
+            </div>
+            <div class="promo-meter">
+                <div class="meter-label">
+                    <span>KESIAPAN LAB</span>
+                    <span>92%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill"></div></div>
+            </div>
+        </aside>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="kontak">
+            <div class="footer-main-row">
+                <div class="footer-col-left">&copy; 2026 JURUSAN RPL SMK NEGERI 9 MEDAN</div>
+                <div class="footer-col-center">MODUL PEMROGRAMAN WEB LANJUT &bull; KURIKULUM MERDEKA</div>
+                <div class="footer-col-right">PORTAL RESPONSIVE UI</div>
+            </div>
+            <div class="footer-logo-container">
+                <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 48'%3E%3Crect x='2' y='2' width='176' height='44' rx='6' fill='%230b1e48' stroke='%2300d8ff' stroke-width='2'/%3E%3Cpolygon points='24,10 36,16 36,30 24,38 12,30 12,16' fill='%2300d8ff'/%3E%3Ctext x='24' y='28' font-family='sans-serif' font-weight='bold' font-size='11' fill='%23040916' text-anchor='middle'%3E9%3C/text%3E%3Ctext x='104' y='23' font-family='sans-serif' font-weight='bold' font-size='12' fill='%23ffffff' text-anchor='middle' letter-spacing='1'%3ESMK NEGERI 9%3C/text%3E%3Ctext x='104' y='36' font-family='sans-serif' font-weight='bold' font-size='9' fill='%2300d8ff' text-anchor='middle' letter-spacing='2'%3EMEDAN // RPL%3C/text%3E%3C/svg%3E" alt="Logo SMK Negeri 9 Medan" class="footer-smk-logo">
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- PROJECT INSPECTION MODAL -->
+    <div class="p3-modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="p3-modal-card">
+            <div class="modal-top">
+                <span class="modal-arcana" id="modalArcana">01 // THE MAGICIAN</span>
+                <button class="modal-close" id="closeModalBtn" aria-label="Tutup Detail">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 id="modalTitle">Judul Proyek</h3>
+                <p id="modalDesc">Deskripsi lengkap proyek siswa RPL.</p>
+                <div class="modal-specs" id="modalSpecs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- P3R CHATBOT AI -->
+    <button class="p3-chat-trigger" id="chatTriggerBtn" aria-label="Buka Asisten AI SMKN 9 & Web">
+        <div class="chat-avatar-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="#00d8ff" stroke-width="2"/>
+                <path d="M5 11.5C7.5 13 16.5 13 19 11.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+                <circle cx="9" cy="11.5" r="1.2" fill="#00d8ff"/>
+                <circle cx="15" cy="11.5" r="1.2" fill="#00d8ff"/>
+            </svg>
+        </div>
+        <div class="chat-trigger-label">
+            <span class="top">S.E.E.S. NAVI</span>
+            <span class="bot">TANYA WEB &amp; SMKN 9</span>
+        </div>
+    </button>
+
+    <section class="p3-chat-window" id="chatWindow" aria-label="Chatbot Asisten Web dan SMKN 9 Medan">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-header-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="9" stroke="#00d8ff" stroke-width="2"/>
+                        <path d="M6 11.5C8.5 13 15.5 13 18 11.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="chat-header-title">
+                    <h4>NAVI // ASISTEN SMKN 9 &amp; WEB</h4>
+                    <span>ONLINE &bull; SIAP MEMBANTU</span>
+                </div>
+            </div>
+            <button class="chat-close-btn" id="closeChatBtn" aria-label="Tutup Chatbot">&times;</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-msg bot">
+                <span class="msg-sender">// NAVI SYSTEM</span>
+                Halo! Saya <strong>NAVI</strong>, asisten virtual Portal RPL <strong>SMK Negeri 9 Medan</strong>.<br><br>
+                Silakan tanyakan apa saja seputar <strong>struktur responsif website ini</strong> atau informasi tentang <strong>SMK Negeri 9 Medan &amp; Jurusan RPL</strong>!
+            </div>
+        </div>
+
+        <div class="chat-quick-chips" id="quickChips">
+            <button class="quick-chip" data-q="Bagaimana perubahan tampilan web ini di Smartphone, Tablet, dan Smart TV?">Layout 3 Perangkat</button>
+            <button class="quick-chip" data-q="Ceritakan profil SMK Negeri 9 Medan dan jurusan RPL">Profil SMKN 9 Medan</button>
+            <button class="quick-chip" data-q="Apa saja tantangan praktikum yang ada di web ini?">Tantangan Modul</button>
+        </div>
+
+        <form class="chat-input-area" id="chatForm">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Ketik pertanyaan seputar web atau SMKN 9..." autocomplete="off" required>
+            <button type="submit" class="chat-send-btn">KIRIM</button>
+        </form>
+    </section>
+
+    <script>
+        const projectDetails = [
+            {
+                arcana: "01 // THE MAGICIAN",
+                title: "Aplikasi Inventaris QR",
+                desc: "Sistem peminjaman dan pengembalian perangkat keras laboratorium RPL SMK Negeri 9 Medan menggunakan pemindaian QR Code berbasis kamera browser tanpa instalasi aplikasi tambahan.",
+                specs: ["Responsive CSS Grid", "HTML5 QR Scanner API", "Database Inventaris Lab", "Kelas XII RPL"]
+            },
+            {
+                arcana: "02 // THE HIEROPHANT",
+                title: "Portal CBT Online",
+                desc: "Platform Computer-Based Test (CBT) yang dirancang adaptif agar siswa dapat mengerjakan evaluasi harian baik melalui komputer desktop laboratorium maupun smartphone.",
+                specs: ["Adaptive Breakpoint UI", "Auto-Save Jawaban", "Timer Ujian Real-Time", "Anti-Tab Switch"]
+            },
+            {
+                arcana: "03 // THE EMPRESS",
+                title: "E-Katalog Produk PKK",
+                desc: "Etalase digital untuk menampilkan produk kreatif dan jasa pengembangan perangkat lunak karya siswa kelas XI dan XII pada mata pelajaran Projek Kreatif dan Kewirausahaan.",
+                specs: ["Flexbox Card Layout", "Katalog Digital Siswa", "Integrasi Pemesanan", "Desain Modern"]
+            },
+            {
+                arcana: "04 // THE CHARIOT",
+                title: "Sistem Monitoring PKL",
+                desc: "Aplikasi pelaporan jurnal kegiatan harian dan presensi berbasis titik koordinat lokasi bagi siswa RPL yang sedang melaksanakan Praktik Kerja Lapangan di industri.",
+                specs: ["Mobile-First Design", "Geolocation API", "Validasi Pembimbing", "Ekspor Laporan PDF"]
+            },
+            {
+                arcana: "05 // JUSTICE",
+                title: "Smart Presensi Lab RFID",
+                desc: "Sistem pencatatan kehadiran praktikum laboratorium secara otomatis menggunakan kartu pelajar RFID yang terhubung langsung ke dashboard monitoring guru.",
+                specs: ["IoT & Web Dashboard", "RESTful JSON API", "Rekap Kehadiran Otomatis", "Keamanan Akses Lab"]
+            },
+            {
+                arcana: "06 // THE HERMIT",
+                title: "Bank Modul & Code Lab",
+                desc: "Pusat dokumentasi materi pembelajaran Pemrograman Web Lanjut Kurikulum Merdeka lengkap dengan studi kasus perubahan tata letak antar perangkat.",
+                specs: ["Kurikulum Merdeka", "Dokumentasi Interaktif", "Studi Kasus CSS Grid", "SMKN 9 Medan"]
+            }
+        ];
+
+        const openDrawerBtn = document.getElementById('openDrawerBtn');
+        const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerBackdrop = document.getElementById('drawerBackdrop');
+
+        function toggleDrawer(show) {
+            mobileDrawer.classList.toggle('open', show);
+            drawerBackdrop.classList.toggle('open', show);
+            mobileDrawer.setAttribute('aria-hidden', !show);
+        }
+
+        openDrawerBtn.addEventListener('click', () => toggleDrawer(true));
+        closeDrawerBtn.addEventListener('click', () => toggleDrawer(false));
+        drawerBackdrop.addEventListener('click', () => toggleDrawer(false));
+        document.querySelectorAll('.mobile-drawer a').forEach(link => {
+            link.addEventListener('click', () => toggleDrawer(false));
+        });
+
+        const projectModal = document.getElementById('projectModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                const idx = Number(card.getAttribute('data-project'));
+                const data = projectDetails[idx];
+                if (!data) return;
+                document.getElementById('modalArcana').textContent = data.arcana;
+                document.getElementById('modalTitle').textContent = data.title;
+                document.getElementById('modalDesc').textContent = data.desc;
+                const specsEl = document.getElementById('modalSpecs');
+                specsEl.innerHTML = data.specs.map(s => `<span class="spec-pill">${s}</span>`).join('');
+                projectModal.classList.add('open');
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => projectModal.classList.remove('open'));
+        projectModal.addEventListener('click', (e) => {
+            if (e.target === projectModal) projectModal.classList.remove('open');
+        });
+
+        function updateP3TimeHud() {
+            const now = new Date();
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const hour = now.getHours();
+            let slot = "AFTER SCHOOL";
+            if (hour >= 7 && hour < 12) slot = "MORNING LAB";
+            else if (hour >= 12 && hour < 16) slot = "DAYTIME LAB";
+            else if (hour >= 16 && hour < 20) slot = "EVENING STUDY";
+            else slot = "DARK HOUR";
+
+            document.getElementById('hudDateText').textContent = `${day} / ${month}`;
+            document.getElementById('hudTimeSlot').textContent = slot;
+        }
+
+        const gridColumnIndicator = document.getElementById('gridColumnIndicator');
+
+        function updateGridBadge() {
+            const w = window.innerWidth;
+            if (w >= 1921) {
+                gridColumnIndicator.textContent = "2 KOLOM // SMART TV";
+            } else if (w >= 601) {
+                gridColumnIndicator.textContent = "2 KOLOM GRID";
+            } else {
+                gridColumnIndicator.textContent = "1 KOLOM GRID";
+            }
+        }
+
+        updateP3TimeHud();
+        updateGridBadge();
+        window.addEventListener('resize', updateGridBadge);
+
+        const chatTriggerBtn = document.getElementById('chatTriggerBtn');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        function toggleChatWindow(forceState) {
+            const isOpen = typeof forceState === 'boolean' ? forceState : !chatWindow.classList.contains('open');
+            chatWindow.classList.toggle('open', isOpen);
+            if (isOpen) {
+                setTimeout(() => chatInput.focus(), 120);
+            }
+        }
+
+        chatTriggerBtn.addEventListener('click', () => toggleChatWindow());
+        closeChatBtn.addEventListener('click', () => toggleChatWindow(false));
+
+        function appendChatMessage(sender, htmlContent, isUser = false) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `chat-msg ${isUser ? 'user' : 'bot'}`;
+            msgDiv.innerHTML = `<span class="msg-sender">${sender}</span>${htmlContent}`;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return msgDiv;
+        }
+
+        function getSmartReply(userQuestion) {
+            const q = userQuestion.toLowerCase();
+
+            if (q.includes('smartphone') || q.includes('tablet') || q.includes('smart tv') || q.includes('layout') || q.includes('perangkat') || q.includes('sidebar') || q.includes('promo') || q.includes('responsif') || q.includes('breakpoint')) {
+                return `Berikut aturan perubahan tata letak otomatis pada website ini:<br><br>
+                1. <strong>Smartphone (&le; 600px):</strong> Struktur menjadi <strong>1 kolom</strong>. <em>Sidebar Menu Kiri</em> dan <em>Widget Promo Kanan</em> <strong>dihilangkan (display: none)</strong>, digantikan tombol <strong>Hamburger (&#9776;)</strong>.<br>
+                2. <strong>Tablet (601px &ndash; 1023px):</strong> <em>Sidebar Menu Kiri</em> tampil, <em>Widget Promo Kanan</em> dihilangkan, dan kartu proyek tampil <strong>2 kolom</strong>.<br>
+                3. <strong>PC Desktop (&ge; 1024px) &amp; Smart TV (&ge; 1921px):</strong> Kedua sidebar tampil di <strong>kiri dan kanan</strong> dengan grid kartu <strong>2 kolom</strong>, serta ukuran font dasar Smart TV menjadi <strong>20px</strong>.`;
+            }
+
+            if (q.includes('smkn 9') || q.includes('smk negeri 9') || q.includes('medan') || q.includes('sekolah') || q.includes('rpl') || q.includes('jurusan')) {
+                return `<strong>SMK Negeri 9 Medan</strong> adalah sekolah menengah kejuruan negeri unggulan di Kota Medan (Jl. Patriot No. 20 A, Lalang, Kec. Medan Sunggal) yang berfokus pada bidang Teknologi Informasi, Desain, dan Pekerjaan Sosial.<br><br>
+                <strong>Kompetensi Keahlian RPL (Rekayasa Perangkat Lunak):</strong><br>
+                &bull; Mempelajari pemrograman web (HTML5, CSS Grid/Flexbox, JavaScript, PHP/Database), mobile, UI/UX, hingga IoT.<br>
+                &bull; Siswa kelas XII mengikuti <strong>PKL</strong> serta <strong>Uji Kompetensi Keahlian (LSP)</strong>.`;
+            }
+
+            if (q.includes('tantangan') || q.includes('modul') || q.includes('praktikum') || q.includes('landscape')) {
+                return `Website ini telah memenuhi seluruh <strong>Tantangan Modifikasi Mandiri</strong> pada Modul Pemrograman Web Lanjut:<br><br>
+                &bull; <strong>Tantangan 1:</strong> Total 6 kartu proyek siswa RPL dengan gambar responsif (<code>max-width: 100%; height: auto;</code>).<br>
+                &bull; <strong>Tantangan 2:</strong> Saat layar HP diputar mendatar (<code>max-width: 850px</code> &amp; <code>orientation: landscape</code>), warna header berubah menjadi <strong>hijau teal (#0d9488)</strong>.<br>
+                &bull; <strong>Tantangan 3:</strong> Pada layar Smart TV (<code>min-width: 1921px</code>), ukuran huruf dasar membesar menjadi <strong>20px</strong>.`;
+            }
+
+            return `Terima kasih atas pertanyaannya! Saya dapat membantu menjelaskan struktur responsif website Portal RPL SMKN 9 Medan ini maupun profil sekolah. Silakan ketik pertanyaan Anda!`;
+        }
+
+        function handleUserMessage(text) {
+            const trimmed = text.trim();
+            if (!trimmed) return;
+
+            appendChatMessage('ANDA // SISWA', trimmed.replace(/</g, "&lt;").replace(/>/g, "&gt;"), true);
+            chatInput.value = '';
+
+            const typingEl = appendChatMessage('// NAVI SYSTEM', '<em>Memproses data sistem...</em>', false);
+
+            setTimeout(() => {
+                typingEl.innerHTML = `<span class="msg-sender">// NAVI SYSTEM</span>${getSmartReply(trimmed)}`;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }, 350);
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            handleUserMessage(chatInput.value);
+        });
+
+        document.querySelectorAll('.quick-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                handleUserMessage(chip.getAttribute('data-q'));
+            });
+        });
+    </script>
+</body>
+</html>
